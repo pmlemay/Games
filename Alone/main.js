@@ -7,12 +7,12 @@ var ghost;
 var bg;
 var frame;
 //the scene is twice the size of the canvas
-var SCENE_W = 1600;
-var SCENE_H = 800;
+var SCENE_W = windowWidth;
+var SCENE_H = windowHeight;
 
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(windowWidth, windowHeight);
 
   //create a sprite and add the 3 animations
   ghost = createSprite(400, 200, 50, 100);
@@ -77,5 +77,5 @@ function draw() {
   //the normal drawing coordinates, the frame will be drawn at
   //the absolute 0,0 (try to see what happens if you don't turn it off
   camera.off();
-  image(frame, 0, 0);
+  image(frame, 0, 0, windowWidth, windowHeight);
 }
