@@ -9,9 +9,9 @@ var SCENE_W;
 var SCENE_H;
 
 function setup() {
-  SCENE_W = windowWidth;
-  SCENE_H = windowHeight;
-  createCanvas(windowWidth, windowHeight);
+  SCENE_W = window.innerWidth;
+  SCENE_H = window.innerHeight;
+  createCanvas(SCENE_W, SCENE_H);
 
   //create a sprite and add the 3 animations
   ghost = createSprite(400, 200, 50, 100);
