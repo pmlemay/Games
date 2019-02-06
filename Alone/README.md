@@ -1,1 +1,1 @@
-https://pmlemay.github.io/Games/Alone/
+Play here: https://pmlemay.github.io/Games/Alone/
