@@ -2,16 +2,15 @@
 //move the mouse around
 //the sprite follows the mouse but appears at the center of the sketch
 //because the camera is following it
-
 var ghost;
 var bg;
 var frame;
-//the scene is twice the size of the canvas
-var SCENE_W = windowWidth;
-var SCENE_H = windowHeight;
-
+var SCENE_W;
+var SCENE_H;
 
 function setup() {
+  SCENE_W = windowWidth;
+  SCENE_H = windowHeight;
   createCanvas(windowWidth, windowHeight);
 
   //create a sprite and add the 3 animations
